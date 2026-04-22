@@ -1,6 +1,29 @@
 
 > Open this page at [https://tiilt-lab-code.github.io/passing-and-communication/](https://tiilt-lab-code.github.io/passing-and-communication/)
 
+## Purpose
+
+This is a **Passing and Communication Game** for micro:bit devices. The program enables teams to play a timed passing game where players pass a "ball" to each other using radio communication between multiple micro:bits. One device acts as a coach that starts and manages the game, while other devices represent players. The game tracks the total number of passes completed within a 30-second round.
+
+## How to Use
+
+### Setup
+1. Load this program onto multiple micro:bit devices (one for coach, one or more for players)
+2. All devices must be on the same radio group (default: Group 13)
+
+### Coach Device
+- **Activate Coach Mode**: Press buttons **A + B** together. The device will display "C"
+- **Add Players**: Players press button **A** to register themselves. The coach device will display the number of registered players
+- **Adjust Difficulty**: Press button **B** to decrease the delay between passes (range: 10 down to 1). The delay is displayed after each press
+- **Start Game**: Once players are registered, press button **A** to begin the 30-second game round
+- **Track Passes**: Press the **logo button** to increment the pass counter during the game
+- When time expires, the device plays a sound and displays the total number of passes
+
+### Player Devices
+- **Register**: Press button **A** to send "add" message to the coach (displays when coach is in setup mode)
+- **Play**: During the game, your device will receive a player's serial number. Pass the device to that player
+- **Visual Feedback**: The device displays a heart icon during the game
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
