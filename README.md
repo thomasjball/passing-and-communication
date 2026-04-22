@@ -21,7 +21,7 @@ This is a **Passing and Communication Game** for micro:bit devices. The program 
 
 ### Player Devices
 - **Register**: Press button **A** to send "add" message to the coach (displays when coach is in setup mode)
-- **Play**: During the game, your device will receive a player's serial number. Pass the device to that player
+- **Play**: During the game, your device may get a large circle; when this happens, pass it quickly to someone else who doesn't have a device.
 - **Visual Feedback**: The device displays a heart icon during the game
 
 ## Use as Extension
